@@ -9,10 +9,10 @@ import pandas as pd
 # Connection
 conn_str = (
     'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=zillow-crawl-data.database.windows.net;'
+    'SERVER=;'
     'DATABASE=Zillow_data;'
-    'UID=zillow;'
-    'PWD=Ewddochin2202;'
+    'UID=;'
+    'PWD=;'
 )
 
 
@@ -79,6 +79,7 @@ def extract_property_info(link):
 df = data['Links'].apply(extract_property_info)
 df.columns = ["Links", "Property_Type", "Year_Built", "Price_per_sqft"]
 print(df)
+
 
 
 
