@@ -100,10 +100,10 @@ import pandas as pd
 
 
 # connect to Azure
-server = 'zillow-crawl-data.database.windows.net'
+server = ''
 database = 'Zillow_data'
-username = 'zillow'
-password = 'Ewddochin2202'
+username = ''
+password = ''
 driver = '{ODBC Driver 17 for SQL Server}'
 connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}"
 
@@ -131,4 +131,5 @@ except Exception as e:
 finally:
     cursor.close()
     conn.close()
+
 
